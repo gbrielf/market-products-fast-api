@@ -13,7 +13,7 @@ def create_product(db: Session, data: ProductCreate):
         description=data.description,
         price=data.price,
         stock=data.stock,
-        availability=data.availability
+        availability=availability
     )
 
     return product_repository.create(db, product)

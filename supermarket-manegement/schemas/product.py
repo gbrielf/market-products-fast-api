@@ -24,7 +24,7 @@ class ProductUpdate(BaseModel):
 
 class ProductResponse(ProductBase):
     id: int
-    availabilty: bool
+    availability: bool
 
     class Config:
         from_attributes = True # Allow fastAPI converts automatically ORM objects in JSON responses, this
